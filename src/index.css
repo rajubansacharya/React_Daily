@@ -1,92 +1,51 @@
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
+/* Container for the whole timer */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-/* Container */
-.todo-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+/* Display the time */
+.display {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-/* Header */
-.todo-header {
-  text-align: center;
-  font-size: 2rem;
-  color: #333333;
-  margin-bottom: 20px;
+/* Controls container */
+.controls {
+    display: flex;
+    gap: 10px;
 }
 
-/* Input and Add Button */
-.todo-input-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+/* Button styling */
+.start-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.todo-input {
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
+.start-button:hover {
+    background-color: #45a049; /* Darker green when hovered */
 }
 
-.todo-add-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #ffffff;
-  background-color: #28a745;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 10px;
+.start-button:active {
+    background-color: #388e3c; /* Even darker green when pressed */
 }
 
-.todo-add-button:hover {
-  background-color: #218838;
+.start-button:focus {
+    outline: none;
 }
 
-/* Task List */
-.todo-list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.todo-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  background-color: #f8f9fa;
-}
-
-.todo-task {
-  font-size: 1rem;
-  color: #333333;
-}
-
-.todo-delete-button {
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  color: #ffffff;
-  background-color: #dc3545;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.todo-delete-button:hover {
-  background-color: #c82333;
+/* Optional: add space between buttons */
+.controls button {
+    margin: 0 5px;
 }

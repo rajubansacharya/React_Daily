@@ -1,16 +1,17 @@
 
-import MyComponent from "./MyComponent";
+
+
 
   
-
+import StopWatch  from "./Stopwatch";
 
 function App() {
 
   
     return(
       <>
-        
-        <MyComponent />
+
+        <StopWatch />
        
       </>
      
